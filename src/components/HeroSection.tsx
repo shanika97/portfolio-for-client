@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDownIcon, GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react';
-const PROFILE_IMAGE = "/WhatsApp_Image_2026-02-20_at_10.58.10_AM.jpg";
+const PROFILE_IMAGE = `${import.meta.env.BASE_URL}WhatsApp_Image_2026-02-20_at_10.58.10_AM.jpg`;
 
 const wordReveal = {
   hidden: {
@@ -24,9 +24,9 @@ export function HeroSection() {
   const handleScroll = (href: string) => {
     const el = document.querySelector(href);
     if (el)
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+      el.scrollIntoView({
+        behavior: 'smooth'
+      });
   };
   return (
     <section
